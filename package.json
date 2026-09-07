@@ -1,0 +1,43 @@
+{
+  "name": "medusa-railway",
+  "version": "0.0.1",
+  "description": "Medusa v2 for Railway",
+  "author": "Medusa (https://medusajs.com)",
+  "license": "MIT",
+  "keywords": [
+    "sqlite",
+    "postgres",
+    "typescript",
+    "ecommerce",
+    "headless",
+    "medusa"
+  ],
+  "scripts": {
+    "build": "medusa build",
+    "start": "medusa start",
+    "seed": "medusa exec ./src/scripts/seed.ts",
+    "predeploy": "medusa db:migrate"
+  },
+  "dependencies": {
+    "@medusajs/admin-sdk": "2.20.1",
+    "@medusajs/cli": "2.20.1",
+    "@medusajs/framework": "2.20.1",
+    "@medusajs/medusa": "2.20.1"
+  },
+  "devDependencies": {
+    "@medusajs/test-utils": "2.20.1",
+    "@swc/core": "^1.7.28",
+    "@types/node": "^20.12.11",
+    "@types/react": "^18.3.2",
+    "@types/react-dom": "^18.2.25",
+    "prop-types": "^15.8.1",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.6.2",
+    "vite": "^5.4.14"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
