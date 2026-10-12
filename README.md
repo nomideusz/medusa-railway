@@ -1,6 +1,6 @@
 # Deploy and Host Medusa v2 on Railway
 
-[![Deploy on Railway](https://railway.com/button.svg)](https://railway.com/new/template/medusa-commerce?utm_medium=integration&utm_source=button&utm_campaign=medusa-commerce)
+[![Deploy on Railway](https://railway.com/button.svg)](https://railway.com/new/template/medusa-commerce?referralCode=sLjDXb&utm_medium=integration&utm_source=button&utm_campaign=medusa-commerce)
 
 [Medusa](https://medusajs.com/) is the open-source headless commerce platform: a Node.js backend with a modular commerce engine (products, carts, orders, pricing, promotions, fulfillment, payments) and a built-in admin dashboard. This template runs Medusa 2.x the way its deployment guide asks for: a server instance that serves the API and admin, a separate worker instance for background jobs, Postgres, and Redis for cache, events, workflows and locks.
 
