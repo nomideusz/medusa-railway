@@ -24,7 +24,7 @@ Four services from one repo. The Medusa image is built from a stock `create-medu
 
 - [Medusa deployment guide](https://docs.medusajs.com/learn/deployment/general)
 - [Medusa configuration reference](https://docs.medusajs.com/learn/configurations/medusa-config)
-- Template source: [nomideusz/medusa-railway](https://github.com/nomideusz/medusa-railway)
+- Template source: [nomideusz/medusa-railway](https://github.com/two-workspaces/medusa)
 
 ### Implementation Details
 
