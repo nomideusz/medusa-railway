@@ -38,6 +38,7 @@ Notes and limits:
 
 - Uploads use Medusa's local file provider on the `/app/static` volume. For a CDN-backed store, switch to the S3 file provider with a Railway bucket.
 - Postgres on Railway's private network has no TLS, so the config disables SSL for the database connection. Set `DATABASE_SSL=true` if you point it at an external TLS database.
+- Since Medusa 2.21 every Store API route returns only the fields on its allowlist, and silently drops anything else a storefront asks for in `fields`. The change closes a leak where a public route could expand into private data. If your storefront relied on extra fields, add them back for that route with the `allowFields` middleware in `src/api/middlewares.ts` (see the [2.21.0 release notes](https://github.com/medusajs/medusa/releases/tag/v2.21.0)).
 - Give the server 1 GB of RAM or more; the worker is lighter.
 - Payments and email are not configured. Add the Stripe payment provider and a notification provider in `medusa-config.ts` when you go live.
 

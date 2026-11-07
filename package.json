@@ -19,13 +19,13 @@
     "predeploy": "medusa db:migrate"
   },
   "dependencies": {
-    "@medusajs/admin-sdk": "2.20.1",
-    "@medusajs/cli": "2.20.1",
-    "@medusajs/framework": "2.20.1",
-    "@medusajs/medusa": "2.20.1"
+    "@medusajs/admin-sdk": "2.22.4",
+    "@medusajs/cli": "2.22.4",
+    "@medusajs/framework": "2.22.4",
+    "@medusajs/medusa": "2.22.4"
   },
   "devDependencies": {
-    "@medusajs/test-utils": "2.20.1",
+    "@medusajs/test-utils": "2.22.4",
     "@swc/core": "^1.7.28",
     "@types/node": "^20.12.11",
     "@types/react": "^18.3.2",
@@ -38,6 +38,6 @@
     "vite": "^5.4.14"
   },
   "engines": {
-    "node": ">=20"
+    "node": ">=22.22.0"
   }
 }
