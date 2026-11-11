@@ -5,7 +5,7 @@ COPY package.json package-lock.json ./
 # package.json pins the version; this ARG mirrors it for the upgrade queue and
 # fails the build if the two drift. Bump both together.
 # upgrade: npm @medusajs/medusa
-ARG MEDUSA_VERSION=2.22.4
+ARG MEDUSA_VERSION=2.22.6
 RUN grep -q "\"@medusajs/medusa\": \"${MEDUSA_VERSION}\"" package.json \
  && npm install --no-audit --no-fund
 COPY . .
